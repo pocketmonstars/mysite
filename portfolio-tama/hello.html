@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+    
+</script>
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NANAMIN PORTFORIO</title>
+</head>
+<body>
+    <script>
+        /**
+ * 到達したら要素を表示させる
+ */
+function showElementAnimation() {
+
+var element = document.getElementsByClassName('js-animation');
+if(!element) return; // 要素がなかったら処理をキャンセル
+
+var showTiming = window.innerHeight > 768 ? 200 : 40; // 要素が出てくるタイミングはここで調整
+var scrollY = window.pageYOffset;
+var windowH = window.innerHeight;
+
+for(var i=0;i<element.length;i++) { var elemClientRect = element[i].getBoundingClientRect(); var elemY = scrollY + elemClientRect.top; if(scrollY + windowH - showTiming > elemY) {
+    element[i].classList.add('is-show');
+  } else if(scrollY + windowH < elemY) {
+    // 上にスクロールして再度非表示にする場合はこちらを記述
+    element[i].classList.remove('is-show');
+  }
+}
+}
+showElementAnimation();
+window.addEventListener('scroll', showElementAnimation);
+    </script>
+
+
+
+<header>  
+
+<div class="container">
+   
+    <div class="header-menu">
+        <div class="header-left">
+            <h1>MATSUBARA NANAMI </h1>
+        </div>
+        <div class="header-right">
+            <a href="https://twitter.com/pocketmonstars2"><i class="fab fa-twitter-square fa-2x"></i></a>
+            <a href="https://www.instagram.com/___oreyade___/"><i class="fab fa-instagram fa-2x"></i></a>
+            <a href="#"><i class="fab fa-youtube fa-2x"></i></a>
+        </div>
+    </div>
+    <div class="nav">
+        <ul class="nav-list">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#works">Works</a></li>
+            <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</header>
+
+<div class="top-wrapper">
+    
+<div class="typing">
+  <p>MY PORTFOLIO</p>
+  <p>Web制作で笑顔を増やす。<span>|</span></p>
+  <video class="video-wrapper" src="images/header.mp4" autoplay loop muted>
+    
+  </video>
+</div>
+
+
+
+
+    
+</div>
+
+<div class="about-wrapper">
+    <div class="container">
+        <h1 id="about" class="main-logo">About</h1>
+
+        <div class="element js-animation">
+        <div class="contents">
+            <div class="myphoto">
+                <img src="images/nanami.JPG">
+            </div>
+            <div class="about-text">
+                <p class="name">松原　菜々美　Matsubara Nanami</p><br>
+                <p><i class="fab fa-twitter-square fa-1.5x"></i>Twitter :
+                    <a href="https://twitter.com/pocketmonstars2"> @pocketmonstars2</a><br>
+                <i class="fab fa-instagram fa-1.5x"></i>Instagram :
+            <a href="https://www.instagram.com/___oreyade___/"> @___oreyade___</a>
+            <p><i class="fab fa-youtube fa-1.5x"></i>Youtube :<a href="#"> Coming soon...</a></p>
+            
+            <p class="main-text">岐阜県在住の22歳。高校では情報処理科でコンピュータについて幅広く学習しました。その後金融業に就職。
+                窓口業務、保険資格取得後はスキルを生かして保険商品の提案などを行ってきました。
+                自分の作品が世の中に発信できるweb業界に憧れ、web制作を学びはじめました。
+                作品を通して人に喜んでもらうこと、お役に立てることを目指しています。
+            </p>
+        </div>
+        </div>
+        </div>
+    </div>
+</div>
+
+<div class="skil-wrapper">
+    <div class="container">
+        <h1 id="skills" class="main-logo">Skills</h1>
+        <div class="contents">
+            <div class="skill-content">
+                
+                <div class="element js-animation">
+                <h1>CODING</h1>
+                
+                <p class="sub">
+                </p>
+                <img src="images/coding.jpg" alt="" class="">
+                <div class="skill-text">
+                    <p>HTML/CSSを用いたWebサイト、PHPを使用したお問い合わせフォームを作成します。PCだけでなくスマートフォンサイトなどご要望のデバイスに合わせたレスポンシブ対応も可能です。
+                    </p>
+                </div>
+                </div>
+            </div>
+
+
+            <div class="skill-content">
+                <div class="element js-animation">
+                <h1>DESIGN</h1>
+                <p class="sub"></p>
+                <img src="images/design.jpg">
+                <div class="skill-text">
+                    <p>サイトの企画からデザイン制作、バナーの制作が可能です。完成イメージをヒアリングし、お客さま・事業の個性を生かした表現、
+                        またユーザーの使いやすさを重視し細部までこだわります。
+                    </p>
+                </div>
+                </div>
+                </div>
+
+
+        </div>
+    </div>
+</div>
+
+<div class="work-wrapper">
+    <div class="container">
+        <h1 id="works" class="main-logo">Works</h1>
+        <div class="element js-animation">
+        <h1>Webサイト</h1>
+        <div class="container">
+        <div class="pcs">
+            
+            <div class="pc-content">
+                
+                <a href="fashion-hp.html" ><img src="images/fashion-pc.jpg"></a>
+                <p>view more<a href="fashion-hp.html" ><i class="fas fa-long-arrow-alt-right fa-3x"></i></a></p>
+            </div>
+
+            <div class="pc-content">
+                <a href="fashion-hp.html"><img src="images/blog-pc.jpg">
+                    <p>view more<a href="fashion-hp.html" > <i class="fas fa-long-arrow-alt-right fa-3x"></i></a></p>
+            </div>
+        </div>
+            
+        </div>
+        </div>
+
+        <div class="element js-animation">
+            <h1>バナー</h1>
+            <div class="banner-content">
+                <img src="images/fashion.png">
+                <img src="images/cafe nanamin.png">
+            </div>
+            
+            <div class="body">
+                <img src="images/body.jpg">
+            </div>
+            </div>
+
+            <div class="element js-animation">
+            <h1>名刺</h1>
+            <div class="meishis">
+            <div class="meishi-content">
+                <img src="images/1.png">
+            </div>
+            <div class="meishi-content">
+                <img src="images/2.png">
+            </div>
+        </div>
+        </div>
+
+        </div>
+    </div>
+
+
+
+
+
+<div class="contact-wrapper">
+    <div class="element js-animation">
+<header id="contact">CONTACT FORM</header>
+
+<form id="form" class="topBefore">
+    
+      <input id="name" type="text" placeholder="NAME">
+      <input id="email" type="text" placeholder="E-MAIL">
+      <textarea id="message" type="text" placeholder="MESSAGE"></textarea>
+  <a href="thanks.html"><input id="submit" type="button" value="GO!"></a>
+  
+</form>
+</div>
+</div>
+<footer>
+<div class="container">
+    <div class="footer-nav">
+        <ul class="nav-list">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#works">Works</a></li>
+            <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+        <div class="footer-sub">
+            <p>©︎MATSUBARA NANAMI PORTFOLIO</p>
+            </div>
+</div>
+
+
+</footer>
+
+
+
+</body>
+</html>
